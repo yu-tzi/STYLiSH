@@ -34,7 +34,7 @@ function mainPageRender(productData) {
 
         product = `
       <li>
-        <img src="${allProducts[i].main_image}" class="img" onclick="window.location.href='/Front-End-Class-Batch11/students/kiki/product.html?tag=${allProducts[i].id}';" />
+        <img src="${allProducts[i].main_image}" class="img" onclick="window.location.href='./product.html?tag=${allProducts[i].id}';" />
         <ul class="color_dom">${colors}</ul>
         <div class="item-name">${allProducts[i].title}</div>
         <div class="price">${allProducts[i].price}</div>

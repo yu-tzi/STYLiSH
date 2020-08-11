@@ -440,7 +440,7 @@ document.querySelector('.payBtn').addEventListener('click', function (event) {
       console.log(JSON.parse(this.response).data.number)
       let number = JSON.parse(this.response).data.number
 
-      window.location.assign(`https://yu-tzi.github.io/Front-End-Class-Batch11/students/kiki/thankyou.html?tag=${number}`);
+      window.location.assign(`./thankyou.html?tag=${number}`);
     }
   }
 

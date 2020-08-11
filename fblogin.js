@@ -31,7 +31,7 @@ window.fbAsyncInit = function () {
 
         alert('redirecting...');
         FB.logout(function () {
-            window.location.href = '/Front-End-Class-Batch11/students/kiki/'
+            window.location.href = './'
             let blank = []
             localStorage.setItem('profileToken', JSON.stringify(blank))
 
@@ -102,7 +102,7 @@ function logIn() {
 
                     console.log("YOLO");
                     statusChangeCallback(response);
-                    window.location.href = 'https://yu-tzi.github.io/Front-End-Class-Batch11/students/kiki/profile.html' 
+                    window.location.href = './profile.html' 
                 
                 });
 
