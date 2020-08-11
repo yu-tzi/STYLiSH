@@ -328,7 +328,7 @@ function slideRender(result) {
 
         let id = result.data[i].id
 
-        let url = `/Front-End-Class-Batch11/students/kiki/product.html?tag=${result.data[i].product_id}`
+        let url = `./product.html?tag=${result.data[i].product_id}`
 
         circle = `<div class="carouselCir ${id}" id = "${id}"></div> `
         carouselNav.innerHTML += circle

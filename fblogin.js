@@ -27,7 +27,7 @@ window.fbAsyncInit = function () {
         statusChangeCallback(response);
     });
 
-    document.querySelector(".profileLog").addEventListener("click", function logout() {
+    document.querySelector(".profileLog")?.addEventListener("click", function logout() {
 
         alert('redirecting...');
         FB.logout(function () {
