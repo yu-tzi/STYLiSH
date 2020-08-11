@@ -299,8 +299,8 @@ document.querySelector('.cartInfoCheck').addEventListener("click", () => {
 
 
 /* default infor */
-document.querySelector('.cartName').placeholder = `${JSON.parse(tokenAmount)[0].user.name}`;
-document.querySelector('.cartEmail').placeholder = `${JSON.parse(tokenAmount)[0].user.email}`;
+document.querySelector('.cartName').value = `${JSON.parse(tokenAmount)[0].user.name}`;
+document.querySelector('.cartEmail').value = `${JSON.parse(tokenAmount)[0].user.email}`;
 
 
 
