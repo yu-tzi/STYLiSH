@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="fblogin.js"></script>
+
+
+</head>
+
+<body onscroll="scrollFunc()">
+
+    <!-- FB login btn -->
+
+
+
+
+    <!-- FB login btn -->
+
+
+    <nav>
+        <div class="white-bar">
+            <div class="head">
+
+                <div class="search_m">
+                    <img src="images/logo.png" class="logo" />
+
+                    <img src="images/search.png" class="search" />
+
+
+
+                    <form class="hiddenSearch" id="hidden-search">
+                        <div class="search-X">X</div>
+                        <input type="text" id="hiddenInput" value="輸入關鍵字" onfocus="if (value == '輸入關鍵字'){value = ''}" onblur="if (value ==''){value='輸入關鍵字'}" />
+
+                        <input type="button" value="送出" id="hiddenSubmit">
+                    </form>
+
+                </div>
+
+
+                <ul class="menu">
+                    <li class="item women ">女裝</li>
+                    <li class="sepo">|</li>
+                    <li class="item man">男裝</li>
+                    <li class="sepo">|</li>
+                    <li class="item accessor">配件</li>
+                </ul>
+
+
+            </div>
+
+
+
+
+            <div class="account">
+                <div class="search-bar" id="search-bar">
+                    <form id="search-form">
+                        <input type="text" id="search-input" />
+                        <input type="image" src="images/search.png" class="search_w" />
+                </div>
+                </form>
+
+                <!--
+       <div class="search-bar"> 
+         
+           <div class="sepo-2"></div>
+          
+        <img src="images/search.png" class="search_w" />
+       
+       </div>-->
+                <img onclick="window.location.href='/Front-End-Class-Batch11/students/kiki/cart.html';" src="images/btn-shopping-cart-01-add@3x.png" class="cart" />
+                <div class="cartAmount">0</div>
+                <a href="#" class="member" onclick="logIn();"><img src="images/member-hover.png" class="member" /></a>
+
+            </div>
+
+        </div>
+
+        <div class="black-bar"></div>
+    </nav>
+
+
+    <div class="content">
+        <div class="slider-box">
+            <div class="carousel-nav">
+
+
+
+            </div>
+            <div class="carousel-slides">
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    </div>
+
+
+    <!--
+  <div class="banner-conatiner">
+  <a class="banner-url" href="#">
+  <section class="banner">
+    
+    <div class="w1">於是<br>我也想要給你<br>一個那麼美好的自己。<br>不朽《和自己和好如初》</div>
+    <ul class="banner-menu"></ul>
+  </section>
+  </a>
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+    <ul class="product">
+
+        <!--
+      <li>
+        <img src="images/main.jpg" class="img" />
+        <div class="color"></div>
+        <div class="item-name">前開襟扭結雪紡洋裝</div>
+        <div class="price">TWD.550</div>
+      </li>
+      <li>
+        <img src="images/main.jpg" class="img" />
+        <div class="colorGroup">
+         <div class="color"></div>
+         <div class="color-2"></div>
+        </div>
+        <div class="item-name">前開襟扭結雪紡洋裝</div>
+        <div class="price">TWD.550</div>
+      </li> 
+      <li>
+        <img src="images/main.jpg" class="img" />
+        <div class="color"></div>
+        <div class="item-name">前開襟扭結雪紡洋裝</div>
+        <div class="price">TWD.550</div>
+      </li>
+      <li>
+        <img src="images/main.jpg" class="img" />
+        <div class="colorGroup">
+          <div class="color"></div>
+          <div class="color-3"></div>
+          <div class="color-4"></div>
+        </div>
+        <div class="item-name">前開襟扭結雪紡洋裝</div>
+        <div class="price">TWD.550</div>
+      </li>
+      <li>
+        <img src="images/main.jpg" class="img" />
+        <div class="color"></div>
+        <div class="item-name">前開襟扭結雪紡洋裝</div>
+        <div class="price">TWD.550</div>
+      </li>
+      <li>
+        <img src="images/main.jpg" class="img" />
+        <div class="color"></div>
+        <div class="item-name">前開襟扭結雪紡洋裝</div>
+        <div class="price">TWD.550</div>
+      </li>
+      -->
+
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="buttom">
+
+        <div class="footer-infor">
+            <ul class="footer">
+                <li>關於</li>
+                <li class="sepo-3">|</li>
+                <li>隱私條款</li>
+                <li class="sepo-3">|</li>
+                <li>聯絡我們</li>
+                <li class="sepo-3">|</li>
+                <li>服務說明</li>
+                <li class="sepo-3">|</li>
+                <li>FAQ</li>
+            </ul>
+            <ul class="icon">
+                <img src="images/line.png" class="line" />
+                <img src="images/twitter.png" class="twitter" />
+                <img src="images/facebook.png" class="facebook" />
+            </ul>
+        </div>
+
+
+        <div class="rights">@ 2020 all rights reserved</div>
+
+    </footer>
+
+
+    <div class="fixedFooter">
+
+
+        <img class="cart-img" src="images/btn-shopping-cart.png" />
+
+        <div onclick="window.location.href='/Front-End-Class-Batch11/students/kiki/cart.html';" class="footer-cart">購物車
+            <div class="cartAmountM">0</div>
+        </div>
+
+
+        <div class="sepo-4">|</div>
+        <img class="member-image" src="images/member-mobile01.png" />
+        <div class="footer-member" href="#" class="member" onclick="logIn();">會員</div>
+
+
+
+
+    </div>
+
+
+
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+
+
+</body>
+
+</html>
+
+</html>

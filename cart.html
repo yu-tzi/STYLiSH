@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <script type="text/javascript" src="fblogin.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <!--start of content-->
+    <div class="content">
+        <nav>
+
+            <div class="logoNCata">
+                <div class="mobileHeader">
+                    <img onclick="window.location.href='/Front-End-Class-Batch11/students/kiki/?tag=all';" src="images/logo.png" class="logo">
+                    <img class="hiddenSearchBtn" src="images/search.png" alt="">
+                </div>
+
+
+                <ul class="cata">
+                    <li onclick="window.location.href='/Front-End-Class-Batch11/students/kiki/?tag=women';">女裝</li>
+                    <div>|</div>
+                    <li onclick="window.location.href='/Front-End-Class-Batch11/students/kiki/?tag=men';">男裝</li>
+                    <div>|</div>
+                    <li onclick="window.location.href='/Front-End-Class-Batch11/students/kiki/?tag=acc';">配件</li>
+                </ul>
+            </div>
+
+
+            <ul class="menu">
+                <div class="search">
+                    <img class="searchBtn" src="images/search.png" alt="">
+                </div>
+                <div class="redAmount">0</div>
+                <img class="cartImg" onclick="window.location.href='/Front-End-Class-Batch11/students/kiki/cart.html';" src="images/btn-shopping-cart-01-add@3x.png" alt="">
+                <a href="#" class="member" onclick="logIn();"><img src="images/member-hover.png" class="member" /></a>
+            </ul>
+
+        </nav>
+
+
+        <div class="blackBar"></div>
+
+        <main>
+
+            <div class="contentBox">
+                <p class="buyRoute">HOME > BAG</p>
+                <ul class="cartTitle">
+                    <li class="cartTitleNum">購物車（3)</li>
+                    <li class="cartSubtitle">數量</li>
+                    <li class="cartSubtitle">單價</li>
+                    <li class="cartSubtitle">小計</li>
+                </ul>
+
+                <div class="cartBoxFrame">
+
+                    <ul class="cartItem">
+
+
+                        <div class="cartItemInfor">
+                            <div class="cartImgnInfo">
+                                <img class="cartItemImg" src="images/main.jpg" alt="">
+
+                                <ul class="cartItemIntro">
+                                    <li>前紐結開衩洋裝</li>
+                                    <li>03040047</li>
+                                    <li>顏色｜白</li>
+                                    <li>尺寸｜Ｍ</li>
+                                </ul>
+                            </div>
+
+                            <img class="removeCartImg" src="images/cart-remove.png" alt="">
+                        </div>
+
+
+
+                        <ul class="hiddenCartTitle">
+                            <li class="hiddenCartSubtitle">數量</li>
+                            <li class="hiddenCartSubtitle">單價</li>
+                            <li class="hiddenCartSubtitle">小計</li>
+                        </ul>
+
+                        <ul class="cart">
+                            <input type="number" name="points" min="0" max="10" class="inputNum">
+                            <li>NT.590</li>
+                            <li>NT.590</li>
+                        </ul>
+
+                        <img class="removeCartImgHidden" src="images/cart-remove.png" alt="">
+
+                    </ul>
+                    <!--item01-->
+                    <ul class="cartItem">
+
+
+                        <div class="cartItemInfor">
+                            <div class="cartImgnInfo">
+                                <img class="cartItemImg" src="images/main.jpg" alt="">
+
+                                <ul class="cartItemIntro">
+                                    <li>前紐結開衩洋裝</li>
+                                    <li>03040047</li>
+                                    <li>顏色｜白</li>
+                                    <li>尺寸｜Ｍ</li>
+                                </ul>
+                            </div>
+
+                            <img class="removeCartImg" src="images/cart-remove.png" alt="">
+                        </div>
+
+
+
+                        <ul class="hiddenCartTitle">
+                            <li class="hiddenCartSubtitle">數量</li>
+                            <li class="hiddenCartSubtitle">單價</li>
+                            <li class="hiddenCartSubtitle">小計</li>
+                        </ul>
+
+                        <ul class="cart">
+                            <input type="number" name="points" min="0" max="10" class="inputNum">
+                            <li class="singalPrice">NT.590</li>
+                            <li class="addedPrice">NT.590</li>
+                        </ul>
+
+                        <img class="removeCartImgHidden" src="images/cart-remove.png" alt="">
+
+                    </ul>
+
+
+
+                    <!--item02-->
+
+
+                </div>
+                <!--end of cartBoxFrame-->
+
+                <div class="cartTransport">
+                    <ul>
+                        <li>配送國家</li>
+                        <select>
+              　<option value="台灣及離島">台灣及離島</option>
+            </select>
+                    </ul>
+
+                    <ul>
+                        <li>付款方式</li>
+                        <select>
+              　<option value="宅配貨到付款">宅配貨到付款</option>
+            </select>
+                    </ul>
+                </div>
+
+                <p class="cartRemind">※ 提醒您：<br> ● 選擇宅配-請填寫正確收件人資訊，避免包裹配送不達<br> ● 選擇超商-請填寫正確收件人姓名(與證件相符)，避免無法領取</p>
+
+                <ul class="cartInfor">
+                    <li class="cartInforTitle">訂購資料</li>
+                    <div class="cartInfoBox">
+                        <li>
+                            <div>收件人姓名</div>
+                            <input type="text" class="cartInfotInput cartName">
+                        </li>
+                        <li>
+                            <div>手機</div>
+                            <input type="text" class="cartInfotInput cartPhone">
+                        </li>
+                        <li>
+                            <div>電子信箱</div>
+                            <input type="text" class="cartInfotInput cartEmail">
+                        </li>
+                        <li>
+                            <div>地址</div>
+                            <input type="text" class="cartInfotInput cartAddress">
+                        </li>
+                        <li>
+                            <div>配送時間</div>
+                            <form class="cartInfoCheck cartCheckbox">
+                                <input type="checkbox" value="morning">
+                                <label>08:00-12:00</label>
+                                <input type="checkbox" value="afternoon">
+                                <label>14:00-18:00</label>
+                                <input type="checkbox" value="anytime">
+                                <label>不指定</label>
+                            </form>
+                        </li>
+                    </div>
+                </ul>
+
+                <!--Tap Pay-->
+
+                <div class="cardInfor">
+                    <style>
+                        .tpfield {
+                            height: 40px;
+                            width: 100%;
+                            border: 1px solid gray;
+                            margin: 0px 0 10px 0;
+                        }
+                        
+                        .cardInfor {
+                            font-size: 20px;
+                            margin-bottom: 50px;
+                            padding-bottom: 20px;
+                            border-bottom-width: 2px;
+                            border-bottom-style: solid;
+                            border-bottom-color: var(--darkGrey);
+                        }
+                        
+                        .cardInfor div {
+                            padding: 10px 0;
+                        }
+                    </style>
+
+                    <div>卡號</div>
+                    <div class="tpfield cartInfotInput" id="card-number"></div>
+                    <div>到期日</div>
+                    <div class="tpfield cartInfotInput" id="card-expiration-date"></div>
+                    <div>安全碼</div>
+                    <div class="tpfield cartInfotInput" id="card-ccv"></div>
+
+                </div>
+
+                <!--Tap Pay-->
+
+                <ul class="totalPrice">
+                    <li>
+                        <div>總金額</div>
+                        <div class="price">
+                            <div>NT.</div>
+                            <div class="beforePrice">1770</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>運費</div>
+                        <div class="price">
+                            <div>NT.</div>
+                            <div>65</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>應付金額</div>
+                        <div class="price">
+                            <div>NT.</div>
+                            <div class="afterPrice">1800</div>
+                        </div>
+                    </li>
+                    <div class="payBtn">確認付款</div>
+                </ul>
+
+
+            </div>
+        </main>
+
+
+
+
+    </div>
+    <!--end of content-->
+
+    <footer class="footer">
+
+        <div class="footer-inside">
+            <div class="footerUpper">
+                <ul class="footerMenu">
+                    <li>關於 Stylish</li>
+                    <li>服務條款</li>
+                    <li>隱私政策</li>
+                    <li>聯絡我們</li>
+                    <li>FAQ</li>
+                </ul>
+
+                <ul class="footerIcon">
+                    <img src="images/line.png" alt="">
+                    <img src="images/twitter.png" alt="">
+                    <img src="images/facebook.png" alt="">
+                </ul>
+            </div>
+
+            <div class="copy">© 2020 All rights reserved</div>
+        </div>
+
+    </footer>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.1.0"></script>
+
+    <script type="text/javascript" src="cart.js"></script>
+
+
+</body>

@@ -1,0 +1,11 @@
+{
+  "liveServer.settings.port": 5501,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.https": {
+    "enable": true,
+    "cert": "/Users/luoyutzi/Front-End-Class-Batch11/students/kiki/https/localhost.pem",
+    "key": "/Users/luoyutzi/Front-End-Class-Batch11/students/kiki/https/localhost.key",
+    "passphrase": "stylish"
+  }
+}

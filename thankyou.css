@@ -1,0 +1,368 @@
+:root {
+    --font: rgb(90, 78, 78);
+    --darkGrey: rgb(43, 41, 41);
+    --fontClicked: rgb(129, 108, 40);
+    --lightGrey: rgb(179, 179, 179);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: "PingFang SC", sans-serif;
+    height: 100%;
+}
+
+
+/*sticky footer & fixed footer*/
+
+.content {
+    min-height: 100%;
+    margin: 0 0 -8vh;
+}
+
+.footer {
+    background-color: var(--darkGrey);
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+}
+
+.footerHidden {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--darkGrey);
+    color: white;
+    display: none;
+}
+
+
+/*basic layout*/
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    width: 20vw;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    align-content: center;
+}
+
+.item li {
+    list-style: none;
+    font-size: 1.2vw;
+    flex-grow: 1;
+    text-align: center;
+    letter-spacing: 1vw;
+    color: var(--font);
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: var(--font);
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    width: 45vw;
+    justify-content: space-evenly;
+}
+
+.item li:last-child {
+    border-right-width: 0px;
+}
+
+.searchHidden {
+    display: none;
+}
+
+.logo {
+    max-height: 3vw;
+}
+
+.search-bar {
+    border-style: solid;
+    border-color: var(--font);
+    border-width: 1px;
+    width: 50%;
+    max-height: 100%;
+    border-radius: 50px;
+    height: 90%;
+    position: relative;
+}
+
+.account {
+    display: flex;
+    flex-flow: row wrap;
+    width: 30vw;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.cart,
+.hover {
+    height: 2.9vw;
+    width: 2.9vw;
+}
+
+.search {
+    position: absolute;
+    right: 0;
+    min-height: 2.9vw;
+    max-height: 2.9vw;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1.5vw 0;
+}
+
+.black-bar {
+    width: 100%;
+    height: 3vh;
+    background-color: var(--darkGrey);
+}
+
+
+/*msg section*/
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1200px;
+}
+
+.showOrder {
+    font-size: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    background-color: rgb(233, 227, 227);
+}
+
+.section :nth-child(3),
+h3 {
+    font-weight: 400;
+    color: var(--font);
+    padding-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.continue {
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    top: 200px;
+    font-size: 20px;
+    margin-bottom: 300px;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+
+/*footer*/
+
+.footer-box {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.footer-menu {
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-menu li {
+    color: white;
+    font-size: 23px;
+    padding: 0 1.3vw;
+    font-weight: 200;
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: 0.2px;
+}
+
+.footer-menu li:last-child {
+    border-right-width: 0px;
+}
+
+.footer-icon {
+    display: flex;
+    flex-flow: row wrap;
+    padding-inline-start: 20px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-icon img {
+    min-height: 2.9vw;
+    max-height: 2.9vw;
+    padding-right: 1vw;
+}
+
+.copy {
+    color: white;
+    font-size: 14px;
+    padding: calc((8vh - 0.6vw)/4) 0;
+}
+
+
+/*layout*/
+
+@media screen and (max-width:1440px) {}
+
+
+/*layout <1024*/
+
+@media screen and (max-width:1024px) {
+    .footer-menu li {
+        font-size: 16px;
+    }
+}
+
+
+/*mobile layout <768*/
+
+@media screen and (max-width:768px) {
+    .continue {
+        top: 50px;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav {
+        padding: 0;
+    }
+    .logo {
+        max-width: 50%;
+        max-height: none;
+        position: relative;
+        padding: 4vw 0;
+    }
+    .searchHidden {
+        display: inline-block;
+        position: absolute;
+        right: 5vw;
+        top: 3.5vw;
+        min-width: 10vw;
+    }
+    .account,
+    .black-bar {
+        display: none;
+    }
+    .item {
+        width: 100%;
+        height: 10vw;
+        background-color: var(--darkGrey);
+    }
+    .item li {
+        font-size: 20px;
+        color: white;
+        border-right-color: white;
+        font-weight: 300;
+    }
+    .content {
+        margin: 0 0 -150px;
+    }
+    .footer {
+        margin-bottom: 60px;
+        height: 200px;
+    }
+    .footer-menu {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+        width: 60%;
+        padding-top: 20px;
+    }
+    .footer-icon {
+        padding-inline-start: 0px;
+    }
+    .footerHidden {
+        display: flex;
+        width: 90%;
+        padding: 1.5vh 5%;
+        justify-content: space-evenly;
+    }
+    .footerHidden div {
+        display: flex;
+        align-items: center;
+        font-weight: 100;
+        justify-content: space-evenly;
+        width: 50vw;
+    }
+    .footerHidden p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: 5vw;
+    }
+    .footerHidden div:first-child {
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: white;
+    }
+    .footer-menu li {
+        font-size: 18px;
+        border-right-width: 0px;
+        margin: 5px;
+    }
+    .copy {
+        padding: 25px 0 0 0;
+        color: var(--font)
+    }
+    .footer-icon img {
+        max-height: 6vw;
+    }
+    .footer-icon {
+        justify-content: space-around;
+        width: 25%;
+    }
+    .footer-box {
+        justify-content: space-around;
+        align-content: space-around;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .footer-menu {
+        width: 70%;
+    }
+    .footer-menu li {
+        font-size: 15px;
+    }
+    .footer-icon img {
+        min-height: 6vw;
+    }
+    .searchHidden {
+        max-width: 7vw;
+    }
+    .footer-icon img {
+        max-height: 5vw;
+    }
+}
